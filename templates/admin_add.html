@@ -1,0 +1,20 @@
+<!-- templates/admin_add.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Menu Item</title>
+</head>
+<body>
+    <h2>Add Menu Item</h2>
+    <form method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required><br>
+        <label>Price:</label>
+        <input type="number" name="price" step="0.01" required><br>
+        <label>Description:</label>
+        <textarea name="description" required></textarea><br>
+        <input type="submit" value="Add Item">
+    </form>
+</body>
+</html>

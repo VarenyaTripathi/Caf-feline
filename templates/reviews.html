@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+    <h1>Leave a Review</h1>
+    <form method="POST">
+        <label>Rating (1 to 5):</label>
+        <input type="number" name="rating" min="1" max="5" required><br>
+        <label>Comment:</label><br>
+        <textarea name="comment" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Customer Reviews</h2>
+    <ul>
+        {% for review in reviews %}
+        <li><strong>{{ review.username }}</strong>: {{ review.rating }}/5<br>{{ review.comment }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
