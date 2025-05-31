@@ -9,3 +9,8 @@ build/
 
 # Environment
 .env
+
+instance/ 
+*.db 
+
+.vscode/ 
