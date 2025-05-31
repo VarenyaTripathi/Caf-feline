@@ -1,2 +1,2 @@
 Caf-feline 🐈☕
-A fullstack coffee shop ordering app with a meme-based UI.
+A coffee shop ordering app with fun cat memes!
